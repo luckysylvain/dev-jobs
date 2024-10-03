@@ -10,6 +10,7 @@ export const getJobs: RequestHandler = expressAsyncHandler(
           jobCreatedAt: true,
           jobTitle: true,
           jobLocation: true,
+          jobTime: true,
           company: {
             select: {
               companyId: true,
@@ -32,6 +33,7 @@ export const getOneJobDetails: RequestHandler = expressAsyncHandler(
         jobCreatedAt: true,
         jobTitle: true,
         jobLocation: true,
+        jobTime: true,
         jobDescription: true,
         jobRequirement: true,
         jobResponsibility: true,
@@ -60,6 +62,7 @@ export const searchJobByTitle: RequestHandler = expressAsyncHandler(
           jobCreatedAt: true,
           jobTitle: true,
           jobLocation: true,
+          jobTime: true,
           company: {
             select: {
               companyId: true,
@@ -90,6 +93,7 @@ export const searchJobByLocation: RequestHandler = expressAsyncHandler(
           jobCreatedAt: true,
           jobTitle: true,
           jobLocation: true,
+          jobTime: true,
           company: {
             select: {
               companyId: true,

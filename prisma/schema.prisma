@@ -24,6 +24,7 @@ model Job {
   jobId              String    @id @default(uuid())
   jobTitle           String
   jobLocation        String
+  jobTime            String
   jobDescription     String
   jobCreatedAt       DateTime       @default(now())
   jobRequirement     String
